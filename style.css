@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-image: url(https://images.pexels.com/photos/268941/pexels-photo-268941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  padding: 0.3rem 0.5rem;
+  border-radius: 15px;
+  width: 35px;
+  transition: all 0.3s;
+  backdrop-filter: sepia(90%);
+}
+
+.input {
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    width: 0;
+    transition: all 0.3s;
+    color: white;
+}
+
+.button {
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1rem;
+    color: white;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    backdrop-filter: blur(5px);
+    width: 210px;
+    height: 0;
+    border-radius: 20px;
+    transition: height 0.3s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.temp {
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+.situation {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    width: fit-content;
+  margin-bottom: 1.7rem;
+}
+
+.wind,
+.humidity {
+    font-size: 0.8rem;
+}
