@@ -27,8 +27,8 @@ button.addEventListener("click", (e) => {
 
 container.addEventListener("click", (e) => {
   if (e.target.classList.contains("fa-magnifying-glass-location")) {
-    form.style.width = "200px";
-    input.style.width = "160px";
+    form.style.width = "300px";
+    input.style.width = "270px";
   } else if (!e.target.classList.contains("input")) {
     form.style.width = "35px";
     input.style.width = "0";
