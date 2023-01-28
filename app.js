@@ -30,7 +30,7 @@ container.addEventListener("click", (e) => {
     form.style.width = "300px";
     input.style.width = "270px";
   } else if (!e.target.classList.contains("input")) {
-    form.style.width = "35px";
+    form.style.width = "30px";
     input.style.width = "0";
   }
 });
@@ -43,7 +43,7 @@ const weatherFunc = (data) => {
     iconLink = "https://openweathermap.org/img/wn/" + icon + ".png";
     descriptionP.innerText = description;
     tempature.innerText = Math.round(temp - 272.15) + "°C";
-    tempature.style.borderBottom = "1px solid #ccc";
+    tempature.style.borderBottom = "1px solid #000";
   nameP.innerText = name;
   humidityP.innerText = "Humidity:" + humidity;
   iconP.src = iconLink;
